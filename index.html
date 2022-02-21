@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Food portal</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/gallery.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!--HEADER SECTION-->
+
+    <div id="idheader">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><h1>foodportal</h1></a>
+            </div>
+
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="articles.html">Articles</a>
+		<a href="products.html">Products</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--SLOGAN SECTION-->
+
+    <div class="slogan">
+        <div class="texto">
+            <p><img src="img/others/hslogan.png" /></p>
+        </div>
+    </div>
+
+    <!--CONTENT SECTION-->
+
+    <div class="content">
+        <div class="contLeft">
+            <div class="menu2"><a href="products.html">Products</a></div>
+            <div class="menu2"><a href="recipes.html">Recipes</a></div>
+            <div class="menu2"><a href="gallery.html">Gallery</a></div>
+        </div>
+
+        <div class="contMiddle">
+
+	    <div class="title"><h1>Article: Vegan Nutrition</h1></div>
+        <p>
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab 
+            illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+            quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+            voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+            voluptas nulla pariatur?"
+            <br /><a href="articles.html">Read more..</a>
+        </p>
+             <br>
+             <div class="title"><h1>Article: Reasons why you should change your diet.</h1></div>
+        <p>
+            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+            molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et 
+            dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
+            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et 
+            aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum 
+            hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+            <br /><a href="articles.html">Read more..</a>
+        </p>
+             <br>
+
+	<p>When should you start changing your diet?:</p>
+	<input type="text" id="currentTime">
+	<input type="text" id="currentDate">
+
+
+
+        </div>
+
+        <div class="contRight">
+            <div class="title"><h3>Did you know that?</h3> <br /> Here you will find some interesting facts </div>
+            <div class="texto"><span id="answer">
+                <h4>1. Vegans spare the lives of about 30 animals each year.</h4>
+                In fact, by skipping animal foods, you spare thousands of animals from hellish factory farms over your lifetime.<br />
+                <h4>2. Being vegan cuts your carbon footprint in half.</h4>
+                Animal agriculture is one of the leading causes of climate change. By leaving animals off your plate, you instantly cut your carbon emissions in half<br />
+                <h4>3. Vegans live longer.</h4>
+                The Mayo Clinic recently reported that switching to a plant-based diet could add up to four years to your life.<br />
+                <h4>4. Vegans save 1,100 gallons of water each day.</h4>
+                The meat industry wastes one-third of drinkable water while 4 billion people don’t have enough. By eating vegan, we can make good use of this precious resource.<br />
+                <h4>5. Vegans are less likely to die from heart disease.</h4>
+                A study published in the American Journal of Clinical Nutrition shows that vegetarians are up to 32 percent less likely than meat eaters to suffer from hospitalization or death due to heart disease.<br />
+                <h4>6. Vegans save 45 pounds of grain each day.</h4>
+                In many countries, the majority of grain grown is fed to farmed animals. In a world in which 795 million people don’t have enough to eat, eating vegan takes a stand for the hungry.<br />
+                <h4>7. Vegans are less likely to have a stroke.</h4>
+                Researchers at McGill University and McMaster University found that study participants who consumed the most fruits and veggies were 30 percent less likely to experience a stroke. <br>
+                <a href="articles.html">Go to article!</a>
+                </span>
+            </div>
+            <br />
+	   <button onclick="myAnswer()" id="myBtn" class="button">Get answer</button>
+	<br><br><br><br><br>
+ 
+
+ 
+<script>
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("currentTime").value = time;
+ var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  document.getElementById("currentDate").value = date;
+</script>
+        </div>
+
+    </div>
+
+
+
+    <!--FOOTER SECTION-->
+
+    <div id="footer">
+        <ul><li>copyright blabla</li><li>larara</li></ul>
+
+    </div>
+
+</body>
+</html>
